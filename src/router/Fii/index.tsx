@@ -15,7 +15,7 @@ export default function Fii() {
       const movements = [-100, 300, 150, -300, -90, 100, -250];
 
       gsap.set("h1", { y: 100 });
-      gsap.set(".counter p", { y: 36 });
+      gsap.set(".counter p", { scale: 0 });
 
       tl.to("h1", {
         y: 0,
@@ -28,6 +28,7 @@ export default function Fii() {
         ".counter p",
         {
           y: 0,
+          scale:1,
           duration: 0.5,
           ease: "power3.out",
         },
@@ -58,7 +59,7 @@ export default function Fii() {
       tl.to(
         ".tagline",
         {
-          y: 40,
+          scale: 0,
           opacity: 0,
         },
         "-=4"
@@ -127,7 +128,7 @@ export default function Fii() {
           </div>
           <div className="link">
             <a href="https://instagram.com/ibtihal.ql" target="_blank">
-              INSTAGRAAM
+              INSTAGRAM
             </a>
           </div>
         </div>
